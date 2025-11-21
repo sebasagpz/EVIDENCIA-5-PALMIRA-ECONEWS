@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmira EcoNEws</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Palmira EcoNEws</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mt-3" id="inicio">
+
+    <!-- CARRUSEL -->
+    <div class="container mb-4">
+      <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/foto1.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="img/foto2.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="img/foto3.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- NOTICIAS -->
+    <section id="noticias" class="container mb-5">
+      <h2 class="text-center mb-4">Noticias</h2>
+
+      <div class="row g-4">
+
+        <!-- NOTICIA SIEMBRA DE ARBOLES -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/foto4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Siembra de árboles en chapinero</h5>
+              <p class="card-text">Se hizo campaña escolar en chapinero para sembrar arboles</p>
+              <a href="#contacto" class="btn btn-success">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTICIA RECOLECCION DE RESIDUos -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/foto5.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Recolección de residuos</h5>
+              <p class="card-text">Tenemos actividad de limpieza y alianza con VEOLIA para facilitar la coleccion de los residuos</p>
+              <a href="#contacto" class="btn btn-success">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTICIA FIESTA DE PALMIRA 49 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/foto6.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">49 Fiesta Nacional de la Agricultura</h5>
+              <p class="card-text">Arte y cultura en la pasada fiesta numero 49 de la africultura celebrada en el coliseo de Palmira</p>
+              <a href="#contacto" class="btn btn-success">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE INSCRIPCION -->
+    <section id="contacto" class="container mb-5">
+      <h2 class="mb-3">Inscribete Aqui</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Correo</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Colegio</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Campaña</label>
+          <select class="form-select" required>
+            <option selected disabled>Seleccionar</option>
+            <option>Siembra</option>
+            <option>Basura</option>
+            <option>Cultura</option>
+          </select>
+        </div>
+
+        <button class="btn btn-success w-100">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-success text-white text-center p-3">
+    © 2025 Palmira EcoNews · Portal de noticias culturales y ambientales para colegios de Palmira
+
+Contacto: palmira.econews@palmira.edu.co · Instagram: @palmira_econews
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
